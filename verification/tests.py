@@ -11,26 +11,46 @@ Each test is dict with
 TESTS = {
     "Basics": [
         {
-            "input": [3, 2],
-            "answer": 5,
-            "explanation": "3+2=?"
+            "input": "I---like--python",
+            "answer": "I-like-python"
         },
         {
-            "input": [5, 7],
-            "answer": 12,
-            "explanation": "5+7=?"
+            "input": "No-double--dashes",
+            "answer": "No-double-dashes"
+        },
+        {
+            "input": "normal-text-with-single-dashes",
+            "answer": "normal-text-with-single-dashes"
+        },
+        {
+            "input": "triple---dashes---is---not---good",
+            "answer": "triple-dashes-is-not-good"
+        },
+        {
+            "input": "One-Two--Three---Four----Five-----Six",
+            "answer": "One-Two-Three-Four-Five-Six"
         }
     ],
     "Extra": [
         {
-            "input": [6, 3],
-            "answer": 9,
-            "explanation": "6+3=?"
+            "input": "a-b--c",
+            "answer": "a-b-c"
         },
         {
-            "input": [6, 7],
-            "answer": 13,
-            "explanation": "6+7=?"
+            "input": "a-a-a-a",
+            "answer": "a-a-a-a"
+        },
+        {
+            "input": "b---b----b",
+            "answer": "b-b-b"
+        },
+        {
+            "input": "a-b--c-d--e",
+            "answer": "a-b-c-d-e"
+        },
+        {
+            "input": "123--------321",
+            "answer": "123-321"
         }
     ]
 }
